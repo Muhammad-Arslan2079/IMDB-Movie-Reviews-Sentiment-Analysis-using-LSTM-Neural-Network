@@ -20,8 +20,7 @@ Uncovering the Aspects:
 * Model architecture
 * Results
 * Future work
-  
-# IMDB Movie Reviews Sentiment Analysis using LSTM Neural Network
+
 
 This project performs sentiment analysis on IMDB movie reviews using an LSTM-based deep learning model. The goal is to classify reviews as either **positive** or **negative** by leveraging natural language processing (NLP) and deep learning techniques.
 
