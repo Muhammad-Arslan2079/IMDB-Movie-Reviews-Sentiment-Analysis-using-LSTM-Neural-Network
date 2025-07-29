@@ -27,7 +27,8 @@ This project performs sentiment analysis on IMDB movie reviews using an LSTM-bas
 ## Features
 
 - Uses the **Kaggle IMDB movie reviews dataset**
-- Text preprocessing and tokenization
+- Text preprocessing and tokenization converting 5000 most frequent words into tokens while ignoring other
+- padding sequence to same length of 200 tokens in each datapoint.
 - Word embeddings with Keras' Embedding layer
 - Deep learning model using LSTM (Long Short-Term Memory) layers
 - Training with validation and accuracy/loss visualization
@@ -77,7 +78,7 @@ python
 model = Sequential([
     Embedding(input_dim=vocab_size, output_dim=embedding_dim, input_length=maxlen),
     LSTM(units=128, return_sequences=False),
-    Dropout(0.5),
+    Dropout(0.2),
     Dense(1, activation='sigmoid')
 ])
 
